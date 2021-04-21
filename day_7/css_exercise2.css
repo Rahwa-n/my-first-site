@@ -1,0 +1,25 @@
+/* decendent selectors */
+div a{
+    color: tomato;
+}
+
+p a{
+    color: slateblue;
+}
+
+a{
+    color: #0f0;
+}
+
+/* child selector */
+div > span{
+    color: yellow;
+}
+
+span{
+    color: saddlebrown;
+}
+
+p > span{
+    color: rgb(255, 2, 2);
+}

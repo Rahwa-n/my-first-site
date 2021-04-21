@@ -1,0 +1,25 @@
+/* pseudo elements selector*/
+div::first-line{
+    color: royalblue;
+}
+
+div{
+    color: darkgoldenrod;
+}
+
+div::first-letter{
+    color: rgb(116, 230, 40);
+}
+
+/* adjacent sibiling selector */
+div +p{
+    color: rgb(185, 77, 171);
+}
+
+/* general sibiling selector
+ *any siblings with in the same parent take the style
+ */
+div ~ p{
+    color: deeppink;
+    color: rgba(190, 190, 183, 0.479);
+}
