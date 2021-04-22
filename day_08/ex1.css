@@ -1,0 +1,30 @@
+.custom{
+    color: cornflowerblue;
+    text-shadow: 5px 5px 2px rgb(0, 0, 0);
+}
+
+div{
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    font-size:  16px; 
+    font-weight: bold;
+    font-style: normal; 
+    text-transform: capitalize;
+    text-align: center;
+    text-decoration: solid underline blueviolet;
+}
+p{
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    text-decoration-line: underline;
+    text-decoration-color: rgb(252, 80, 0);
+    text-decoration-style: dotted;
+}
+
+span{
+    font-style: inherit;
+}
+
+.weekday{
+    font-style: normal;
+}
