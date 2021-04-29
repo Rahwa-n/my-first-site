@@ -25,4 +25,6 @@ secondName = 8;
 add = firstName + secondName;
 console.log("Add: " + add);
 
+//outcome
+//Add: 13
 
