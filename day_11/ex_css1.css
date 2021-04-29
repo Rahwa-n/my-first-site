@@ -1,0 +1,31 @@
+div{
+    background-color: aqua;
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+    box-shadow: 2px 3px 170px -8px rgba(0,0,0,0.8);
+}
+
+.scrollex{
+    background-color: green;
+    width: 50px;
+    height: 100px;
+    overflow: scroll;
+    margin-top: 50px;
+}
+
+.scrollHidden{
+    background-color: blueviolet;
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.scrollAuto{
+    background-color: tomato;
+    width: 50px;
+    height: 100px;
+    overflow: auto;
+    margin-top: 50px;
+}

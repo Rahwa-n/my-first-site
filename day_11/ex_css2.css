@@ -1,0 +1,39 @@
+body{
+    background-image: url(bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.2;
+   
+    
+}
+.firstSpan{
+    border: 1px solid green;
+    margin:  5px;
+    cursor: help;
+    color: #000;
+}
+
+.secondSpan{
+    border: 1px solid brown;
+    margin: 5px;
+    display: block;
+    cursor: crosshair;
+    color: #000;
+    
+}
+
+.thirdSpan{
+    border: 1px solid cornflowerblue;
+    margin: 5px;
+    cursor: pointer;
+    color: #000;
+}
+
+.forthSpan{
+    border: 1px solid hotpink;
+    margin: 5px;
+    visibility: none;
+    cursor: progress;
+    color: #000;
+}
+
