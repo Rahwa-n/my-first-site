@@ -13,3 +13,4 @@ var text11 = text1.toLowerCase(),text22 = text2.toUpperCase(),text33 = text3.toL
 
 console.log(text11.concat(' ' + text22 + ' ' + text33));
 
+//hello JAVASCRIPT world
