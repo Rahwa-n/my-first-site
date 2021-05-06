@@ -5,7 +5,7 @@ pets.forEach(function(pet) {
     console.log(pet);
 });
 
-
+// this will helo to understand that can be indifferen ways
 // it can be done like this too either the upper one of this
     // var pets = ['Bobby','Sam','Spot'];
 
