@@ -1,3 +1,4 @@
+//array method
 var pets = ['Bobby','Sam','Spot', 'sanita'];
 
 var petsUpperCase = pets.map(function(pet){
