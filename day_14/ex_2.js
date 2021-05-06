@@ -1,4 +1,4 @@
-var pets = ['Bobby','Sam','Spot'];
+var pets = ['Bobby','Sam','Spot', 'sanita'];
 
 var petsUpperCase = pets.map(function(pet){
     return pet.toUpperCase();
