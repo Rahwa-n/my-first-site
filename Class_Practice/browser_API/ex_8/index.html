@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercise 7</title>
+        <script>
+            alert('This program adds all the numbers you input');
+            var numberUser = 0; 
+            var number1 = 0;
+            average = "true";
+            user = "true";      
+            while(user){
+                user = confirm('Are you ready to enter a number?');
+                if(user){
+                    var num1 = prompt('enter a number here'); 
+                    numberUser = numberUser + Number(num1);
+                    numberUser++;
+                    average = numberUser/number1;
+                }
+                          
+            }
+                alert(`The result so far is: ${numberUser}`);
+                alert(`The user input ${number1} numbers`);
+                alert(`The average is: ${average}`);
+        </script>
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Create the following folder/file structure:
+/ex_8
+  |-- index.html
+index.html
+Copy and paste the code from the previous exercise
+Refactor the code to math the new requirements:
+Now we need to keep track of how many numbers the user input
+Once the user doesn't want to add any more numbers show the following message:
+The final result is: %result%
+The user input %numbers% numbers
+The average is: %average% -->
