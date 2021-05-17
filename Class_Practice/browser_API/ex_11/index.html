@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Exercise 11</title>
+        <script>
+            var userName = prompt("Please entr you user name here");
+            var password = prompt("Please enter your password here");
+            alert('Welcome '+ userName);
+            var logged;
+            var loggedIn = function(){
+                logged = confirm('Do you still want to be logged?');
+                if(logged){
+                    alert(userName + 'your session has been restored');
+                } else {
+                    alert(userName + ' your session has expired');
+                }
+                return logged;
+            }
+            setTimeout(loggedIn, 10000);
+        </script>
+        <!-- <script>
+            var userName=window.prompt('input your username');
+            var passWord=window.prompt('input your password');
+            window.alert('Wecome '+userName);
+            var stillWantLogged;
+            var stillLogged=function(){
+                stillWantLogged=window.confirm('Do you still want to be logged?');
+                if(stillWantLogged){
+                    window.alert(userName+' your session has been restored');
+                }else{
+                    window.alert(userName+' your session has expaired');
+                };
+                return stillWantLogged;
+                }
+            setTimeout(stillLogged,10000);     
+        </script> -->
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Create the following folder/file structure:
+/ex_11
+  |-- index.html
+index.html
+Create a basic HTML document
+Create a script tag on the document head element
+Ask the user to input his username
+Ask the user to input his password
+Show the following alert message
+Welcome %username%
+After 10 seconds and for one time only show the following message to the user
+Do you still want to be logged?
+If the user confirms that he wants to be logged show the following message:
+%username% your session has been restored
+Else show the following message
+%username% your session has expaired -->
