@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Elements</title>
+  <script>
+      window.onload=function(){
+        var ulElement=document.querySelector('ul');
+        var children=ulElement.children;
+        console.log(children);
+        var children2=children[1];
+        children2.classList.add('green');
+        var children4=children[3];
+        children4.classList.add('red');
+        var parent=children2.parentElement;
+        console.log(parent);
+        children2.parentElement.classList.add('orange');
+      }
+  </script>
+  <style>
+    .red {
+      color: red;
+    }
+    
+    .green {
+      color: green;
+    }
+    
+    .orange {
+      color: orange;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+  </ul>
+</body>
+</html>
+
+
+
+
+<!-- Create the following folder/file structure:
+/ex_20
+  |-- index.html
+index.html
+Create a basic HTML document
+Create a script tag on the document head element
+Add the following html code
+
+Select the ul element
+Show the ul children elements as output
+Select the 2nd child element, assign it to a variable and assign the green class to it
+Select the 4th child element, assign it to a variable and assign the red class to it
+Use the selected child elements to show the parent one as output
+Using one of the child elements get a reference to the parent and add the orange class to it
+Expected result:
+  <ul class="orange">
+    <li>Item 1</li>
+    <li class="green">Item 2</li>
+    <li>Item 3</li>
+    <li class="red">Item 4</li>
+    <li>Item 5</li>
+  </ul> -->

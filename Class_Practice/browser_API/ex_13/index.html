@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Exercise 13</title>
+        <meta charset="UTF-8">
+        <script>
+            var stayTime = prompt('Please input the number of seconds that you would like to sty in our site');
+            var seconds = 0;
+            setTimeout('interval(); ', 1000);
+            function interval(){
+                seconds++;
+                remainSeconds = stayTime - seconds;
+                console.log(remainSeconds);
+                if(remainSeconds ==0){
+                    alert('Your session has expired, come again soon!');
+                }
+                setTimeout('interval();' ,1000);
+            }
+        </script>
+    </head>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Create the following folder/file structure:
+/ex_13
+  |-- index.html
+index.html
+Create a basic HTML document
+Create a script tag on the document head element
+Ask the user to input the number of seconds that he would like to stay in our site
+Show how many seconds left he has using console.log()
+Once the session is over show the following message:
+Your session has expired, come again soon! -->
