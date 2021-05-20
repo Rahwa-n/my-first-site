@@ -1,11 +1,11 @@
 {
-  "name": "myproject",
+  "name": "class20exercise",
   "version": "1.0.0",
-  "description": "my practice",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "nodemon"
   },
   "author": "Rahwa",
   "license": "ISC",

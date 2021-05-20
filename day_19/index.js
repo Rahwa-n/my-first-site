@@ -1,20 +1,24 @@
-const express = require('express');
+// const express = require('express');
+// const app = express();
 
-const app = express();
-
-const home = require('./home');
-const products = require('./products');
-
-app.set('view engine', 'pug');
-
+// const home = require('./home');
+// const products = require('./products');
 // app.use('/', home);
 // app.use('/myproducts', products );
 
+
+const express = require('express');
+const app = express();
+
+app.set('view engine', 'pug');
+
 app.get('/', function(req, res){
-    res.render('index', {title: 'Hey', message:'I like to use Pug'});
+    res.render('index', {mytitle: 'Hey', message:'I like to code'});
 });
-app.listen(3000, function(){
-    console.log('I am listening');
+
+app.listen(3002,function()
+{
+    console.log('I am listening ');
 });
 
 
