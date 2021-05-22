@@ -1,12 +1,10 @@
-doctype html
-html(lang='en')
-  head
-    title Simple site using Node.js, Express and Pug
-    link(rel='stylesheet', href="/css/styles.css")
-    script(src="js/scripts.js")
-  body
-    h1 superheroes
-    p This displays superhero information 
-    each item in superheroes
-      div.superhero-container
-        h1= item.name
+extends ./layout.pug
+block content
+  h1 superheroes
+  div.container
+  p This displays superhero information 
+  each item in superheroes
+    div.superhero-container
+      h4=item.name
+      a(href="/superheroes/" + item.id) details
+

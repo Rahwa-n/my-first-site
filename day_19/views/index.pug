@@ -1,15 +1,11 @@
-doctype html
+extends ./layout.pug
 include product-mixin
-html(lang='en')
-  head
-    title= mytitle
-  body
-    h1= message
-    div.container
-    p Starting using Pug! 
-    +product({title: 'PS5', description: 'Gaming console'})
-    +product({title: 'Nintendo Switch', description: 'Another Gaming console'})
-    
+block content
+  h1= message
+  div.container
+  p Starting using Pug! 
+  +product({title: 'PS5', description: 'Gaming console'})
+  +product({title: 'Nintendo Switch', description: 'Another Gaming console'})
 
-    
 
+  
