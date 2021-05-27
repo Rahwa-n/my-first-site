@@ -1,4 +1,5 @@
-extends ./layout.pug 
+extends ./layout.pug
 
-block content 
-  h4= superhero.name
+block content
+  img(src='/img/superheroes/' + superhero.image)
+  h3= superhero.name

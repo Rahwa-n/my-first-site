@@ -1,10 +1,13 @@
 extends ./layout.pug
 block content
   h1 superheroes
-  div.container
   p This displays superhero information 
-  each item in superheroes
+  include ./create.pug
+
+  each superhero in superheroes
     div.superhero-container
-      h4=item.name
-      a(href="/superheroes/" + item.id) details
+      a(href="/superheroes/" + superhero.id) 
+        img(src='/img/superheroes/' + superhero.image)
+        h3=superhero.name
+      
 
