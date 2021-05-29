@@ -1,14 +1,19 @@
 const express = require('express');
+const mongoClient = require('mongodb').MongoClient;
 const app = express();
 const port = 3003;
+const dburl = "mongodb://localhost:27017"
 const bodyParser = require('body-parser');
 const urlEncodedParser = bodyParser.urlencoded({extended:false});
+mongoClient.connect(dburl,function(err,client){
+  console.log('connected with DB');
+});
 
 app.set('view engine', 'pug');
 app.use(express.static('public'));
 
 const superheroes = [
-  { id: 1, name: 'SPIDER-MAN', image: 'spiderman.jpg' },
+  { id: 1, name: 'SPIDER-MAN', image: 'spiderman.jpg', },
   { id: 2, name: 'CAPTAIN MARVEL', image: 'captainmarvel.jpg' },
   { id: 3, name: 'HULK', image: 'hulk.jpg' },
   { id: 4, name: 'THOR', image: 'thor.jpg' },
@@ -36,8 +41,8 @@ app.get('/superheroes/:id', function(req,res){
 
   });
 
-  selectedSuperHero = selectedSuperHero[0];
-  res.render('superhero', {superhero:selectedSuperHero});
+    selectedSuperHero = selectedSuperHero[0];
+    res.render('superhero', {superhero:selectedSuperHero});
   });
   app.post('/superheroes', urlEncodedParser, function(req, res){
     const newId = superheroes[superheroes.length-1].id + 1 ;
