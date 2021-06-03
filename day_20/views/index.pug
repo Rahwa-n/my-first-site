@@ -4,9 +4,16 @@ block content
   p This displays superhero information 
   include ./create.pug
 
-  each superhero in superheroes
+  each superhero in documents
     div.superhero-container
-      a(href="/superheroes/" + superhero.id) 
-        img(src='/img/superheroes/' + superhero.image)
+      a(href="/superheroes/" + superhero._id) Details
+        img(src='/img/superheroes/' + superhero.image) 
         h3=superhero.name
+        a(href="/edit/" + superhero._id) Edit
+        br
+        a(href="/delete/" + superhero._id) Delete
         
+        
+
+
+      

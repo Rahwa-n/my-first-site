@@ -1,4 +1,6 @@
-div.create-container
+extends ./layout.pug
+
+block content
   form(action="/superheroes", method="post")
     input(type="text", placeholder="superhero name", required="required", name="superhero")
     input(type="text", placeholder="superhero description", required="required", name="description")
@@ -18,5 +20,3 @@ div.create-container
     span Green
     br
     button Create
-   
-

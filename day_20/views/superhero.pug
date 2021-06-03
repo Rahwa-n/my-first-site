@@ -1,5 +1,9 @@
 extends ./layout.pug
 
 block content
-  img(src='/img/superheroes/' + superhero.image)
-  h3= superhero.name
+  h1 superheroes Detail Page
+    img(src='/img/superheroes/' + superhero.image)
+    h3= superhero.name
+    p= superhero.description
+    p= superhero.color
+    p= superhero.weather
