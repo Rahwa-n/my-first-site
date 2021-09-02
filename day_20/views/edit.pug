@@ -1,22 +1,26 @@
 extends ./layout.pug
-
 block content
-  form(action="/superheroes", method="post")
-    input(type="text", placeholder="superhero name", required="required", name="superhero")
-    input(type="text", placeholder="superhero description", required="required", name="description")
-    br
-    br
-    input(type= 'checkbox' name= 'weather' checked value= 'Spring')
-    span Spring
-    input(type= 'checkbox' name= 'weather' value= 'Summer')
-    span Summer
-    br
-    br
-    input(type= 'radio' name= 'color' checked value= 'Red')
-    span Red
-    input(type= 'radio' name= 'color'  value= 'Blue')
-    span Blue
-    input(type= 'radio' name= 'color'  value= 'Green')
-    span Green
-    br
-    button Create
+    div.create-container
+    h1 Create A new Superhero
+        form(action="/edit",method="post")
+            input(type="hidden" name="_id" value= superhero._id)
+            input(type="text",placeholder="superhero name", required="required", name="superhero" value= superhero.name)
+            input(type="text",placeholder="description",required="required",name="description" value= superhero.description)
+            br
+            br
+            input(type= 'checkbox' name= 'weather' checked value= 'Spring')
+            span Spring
+            input(type= 'checkbox' name= 'weather' value= 'Summer')
+            span Summer
+            br
+            br
+            input(type= 'radio' name= 'color' checked value= 'Red')
+            span Red
+            input(type= 'radio' name= 'color'  value= 'Blue')
+            span Blue
+            input(type= 'radio' name= 'color'  value= 'Green')
+            span Green
+            br
+            button Edit
+            br
+            a(href= "/") Home

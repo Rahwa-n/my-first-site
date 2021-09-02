@@ -61,10 +61,11 @@ app.get('/edit/:id', function(req,res){
   });
 });
 
-//route for detail page superhero, to display the detail of the superhero/ product
+//to display the detail of the superhero/ product
 //after edited or updated
 app.post('/superheroes', urlEncodedParser, function(req, res){
   const newSuperHero = {
+    image: req.body.image,
     name: req.body.superhero,
     description: req.body.description,
     weather: req.body.weather,
@@ -86,7 +87,7 @@ app.post('/superheroes', urlEncodedParser, function(req, res){
 app.post('/edit', urlEncodedParser, function(req, res){
   const selectedId = req.body._id;
   const filter = {_id: ObjectID(selectedId)};
-  const set = {$set: {name: req.body.superhero, description: req.body.description}};
+  const set = {$set: {image: req.body.image, name: req.body.superhero, description: req.body.description}};
   mongoClient.connect(dburl,function(err,client){       
     const myDataBase = client.db('comics');
     const myCollection = myDataBase.collection('superheroes');  
